@@ -134,3 +134,10 @@ public class ChannelHandle extends SimpleChannelInboundHandler<String> {
 ```
 
 ```
+> 在服务端和客户端都启动后会发现服务端不断的接收到客户端的请求，客户端不断地响应着服务端的返回
+### 4. 执行流程
+1. 服务端启动
+2. 客户端启动，执行ChannelHandle中的channelActive方法，向服务端发送消息
+3. 服务端的ChannelHandle中的channelRead0进行响应处理，并向客户端响应消息
+4. 客户端的ChannelHandle中的channelRead0响应服务端的响应，并向服务端发送消息
+5. 重复3，4步骤
