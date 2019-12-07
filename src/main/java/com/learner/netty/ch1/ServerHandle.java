@@ -12,7 +12,7 @@ import io.netty.util.CharsetUtil;
  * @author: lizza1643@gmail.com
  * @date: 2019-11-28
  */
-public class ChannelHandle extends SimpleChannelInboundHandler<HttpObject> {
+public class ServerHandle extends SimpleChannelInboundHandler<HttpObject> {
 
     /**
      * 用于获取请求，并进行处理，最后返回响应

@@ -1,12 +1,9 @@
 package com.learner.netty.ch1;
 
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpServerCodec;
-import io.netty.handler.codec.http2.Http2Codec;
 
 /**
  * @Desc: 初始化管道
@@ -21,6 +18,6 @@ public class ServerInitializer extends ChannelInitializer<SocketChannel> {
         ChannelPipeline pipeline = ch.pipeline();
 
         pipeline.addLast("serverCodec", new HttpServerCodec());
-        pipeline.addLast("channelHandle", new ChannelHandle());
+        pipeline.addLast("channelHandle", new ServerHandle());
     }
 }

@@ -10,7 +10,7 @@ import java.util.UUID;
  * @author: lizza1643@gmail.com
  * @date: 2019-11-29
  */
-public class ChannelHandle extends SimpleChannelInboundHandler<String> {
+public class ServerHandle extends SimpleChannelInboundHandler<String> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {

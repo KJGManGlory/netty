@@ -26,9 +26,9 @@ public class Client {
 
         try {
             Bootstrap bootstrap = new Bootstrap();
-            bootstrap.group(group);
-            bootstrap.channel(NioSocketChannel.class);
-            bootstrap.handler(new ClientInitializer());
+            bootstrap.group(group)
+                    .channel(NioSocketChannel.class)
+                    .handler(new ClientInitializer());
 
             ChannelFuture future = bootstrap.connect("localhost", 8899);
             future.channel().closeFuture().sync();
