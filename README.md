@@ -15,3 +15,5 @@ ch1, ch2 ... :表示不同的章节，每一章节的内容都是不同的
 - `ch3`：netty与多个客户端实现通信
 - `ch4`：netty的心跳机制
 - `ch5`：netty对websocket的支持
+- `ch6`：Java IO体系回顾
+- `ch7`：Java NIO体系
