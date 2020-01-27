@@ -30,6 +30,7 @@ public class Server {
 
             // 绑定端口
             ChannelFuture channelFuture = serverBootstrap.bind(8899).sync();
+            System.out.println(">>>>>>>> 接收服务已启动，端口：8899");
             channelFuture.channel().closeFuture().sync();
         } finally {
             boosGroup.shutdownGracefully();
