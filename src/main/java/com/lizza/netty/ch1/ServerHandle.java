@@ -12,8 +12,8 @@ public class ServerHandle extends SimpleChannelInboundHandler<String> {
 
     /**
      * 用于获取请求，并进行处理，最后返回响应
-     * @author: lizza@vizen.cn
-     * @date: 2019/11/28 9:36 下午
+     * @author: lizza1643@gmail.com
+     * @date: 2020/8/27 9:10 上午
      * @param ctx
      * @param msg
      * @return void
